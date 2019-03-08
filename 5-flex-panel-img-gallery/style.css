@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  /* stops overflow/scroll right */
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+  display: flex;
+  /* flex-direction: row; */
+}
+
+img {
+  /* stops scroll down to ugly mess */
+  flex: 1;
+  max-height: 100vh;
+  min-height: 100vh;
+}
+
+.img {
+  /* flex: 1; */
+  width: 20%;  
+  /* to positon text on top */
+  position: relative;
+  text-align: center;
+  color: white;
+  transition: all 0.4s, all 0.4s ease;
+}
+
+.img:hover {
+  /* transform: translate(300px, 0); */
+  /* width: 40%; */
+  /* margin-left: -50px;
+  margin-right: 100px;*/
+}
+
+
+.text {
+  /* to get text on top and centered */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.t-w {
+  color: white;
+}
